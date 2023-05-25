@@ -12,7 +12,7 @@ $(document).on("keydown", function () {
     }
 });
 
-$(document).on("click", function () {
+$("body").on("click", function () {
     if (!started) {
         started = true;
         $("#level-title").text("Level 0");
