@@ -4,14 +4,6 @@ var userClickPattern = [];
 var started = false;
 var level = 0;
 
-$("body").on("click", function () {
-    if (!started) {
-        started = true;
-        $("#level-title").text("Level 0");
-        nextSequence();
-    }
-});
-
 $(document).on("keydown", function () {
     if (!started) {
         started = true;
