@@ -4,7 +4,7 @@ var userClickPattern = [];
 var started = false;
 var level = 0;
 
-$(document).on("keydown", function () {
+$("body").on("click", function () {
     if (!started) {
         started = true;
         $("#level-title").text("Level 0");
@@ -12,7 +12,7 @@ $(document).on("keydown", function () {
     }
 });
 
-$("body").on("click", function () {
+$(document).on("keydown", function () {
     if (!started) {
         started = true;
         $("#level-title").text("Level 0");
